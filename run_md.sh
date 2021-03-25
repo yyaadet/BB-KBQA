@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 export BERT_BASE_DIR=./chinese_L-12_H-768_A-12
 export MY_DATASET=./data/MD
-python run_md.py \
+python3 run_md.py \
   -do_train \
   -do_eval \
   -do_predict \

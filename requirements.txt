@@ -1,2 +1,4 @@
-tensorflow >= 1.11.0   # CPU Version of TensorFlow.
+#tensorflow >= 1.11.0   # CPU Version of TensorFlow.
+tensorflow==1.15.0
 # tensorflow-gpu  >= 1.11.0  # GPU version of TensorFlow.
+#bert-base==0.0.9
