@@ -65,6 +65,7 @@ ner/ : BERT-CRF model
 
 运行下面的命令进行训练或者测试：run_md.sh
 
+
 ```bash
 #!/usr/bin/env bash
 export BERT_BASE_DIR=./chinese_L-12_H-768_A-12
@@ -84,6 +85,10 @@ python run_md.py \
   -output_dir ./md_output/ \
   -device_map 1
 ```
+
+- train. `./run_md.sh train`
+- predict. `./run_md.sh predict`
+- evaluate. `./run_md.sh eval`
 
 ### entity disambiguation
 
