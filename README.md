@@ -183,6 +183,10 @@ python run_classifier.py \
 | BERT-Softmax(2)   | 94.66      | 97.63      | 98.41      |
 
 
+## Setup
+
+1. cd source root.
+2. Install python library. `pip3 install -r requirements.md`
 
 ## Reference
 
@@ -196,7 +200,8 @@ python run_classifier.py \
 ```
 
 - https://github.com/google-research/bert
-- https://github.com/macanv/BERT-BiLSTM-CRF-NER
+- https://github.com/macanv/BERT-BiLSTM-CRF-NER 
+- https://zhuanlan.zhihu.com/p/53796189
 
 ## Contact information
 
