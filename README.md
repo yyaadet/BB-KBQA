@@ -187,6 +187,12 @@ python run_classifier.py \
 
 1. cd source root.
 2. Install python library. `pip3 install -r requirements.md`
+3. Download bert model from **[`BERT-Base, Chinese`](https://storage.googleapis.com/bert_models/2018_11_03/chinese_L-12_H-768_A-12.zip)**（chinese_L-12_H-768_A-12）:Chinese Simplified and Traditional, 12-layer, 768-hidden, 12-heads, 110M parameters. Place it to `chinese_L-12_H-768_A-12/`
+
+
+## Knowledge dataset
+
+You can download it from [kaggle](https://www.kaggle.com/kerneler/starter-nlpcc-kbqa-7dd5b660-f), but I have not know how to use it.
 
 ## Reference
 
@@ -202,6 +208,7 @@ python run_classifier.py \
 - https://github.com/google-research/bert
 - https://github.com/macanv/BERT-BiLSTM-CRF-NER 
 - https://zhuanlan.zhihu.com/p/53796189
+- https://www.kaggle.com/kerneler/starter-nlpcc-kbqa-7dd5b660-f?select=nlpcc2018.kbqu.train
 
 ## Contact information
 
