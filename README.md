@@ -205,4 +205,4 @@ python run_classifier.py \
 
 ## Contact information
 
-For help or issues using BB-KBQA, please submit a GitHub issue or email (liuaiting@bupt.edu.cn).
+For help or issues using BB-KBQA, please submit a GitHub issue or email (164504252@qq.com) or weixin (yyaadet2002).
