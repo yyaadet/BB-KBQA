@@ -481,6 +481,7 @@ def adam_filter(model_path):
 
 
 def train(args):
+    tf.logging.set_verbosity(tf.logging.INFO)
     os.environ['CUDA_VISIBLE_DEVICES'] = args.device_map
 
     processors = {
@@ -532,7 +533,8 @@ def train(args):
         model_dir=args.output_dir,
         save_summary_steps=500,
         save_checkpoints_steps=500,
-        session_config=session_config
+        session_config=session_config,
+        log_step_count_steps=1
     )
 
     train_examples = None
@@ -619,6 +621,8 @@ def train(args):
             min_steps=0,
             run_every_secs=None,
             run_every_steps=args.save_checkpoints_steps)
+        
+        #logging_hook = tf.train.LoggingTensorHook({"loss": total_loss}, every_n_iter=10)
 
         train_spec = tf.estimator.TrainSpec(input_fn=train_input_fn, max_steps=num_train_steps,
                                             hooks=[early_stopping_hook])
