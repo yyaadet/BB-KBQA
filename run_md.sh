@@ -13,7 +13,7 @@ train)
     -bert_config_file $BERT_BASE_DIR/bert_config.json \
     -init_checkpoint $BERT_BASE_DIR/bert_model.ckpt \
     -max_seq_length 60 \
-    -batch_size 6 \
+    -batch_size 128 \
     -learning_rate 1e-5 \
     -num_train_epochs 2 \
     -output_dir ./md_output/ \
